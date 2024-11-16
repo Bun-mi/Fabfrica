@@ -93,8 +93,9 @@ nav .menu{
     }
 }
 .case{
-    padding: 40px;
+    padding: 5px;
     width: 100px;
+    height: 100px;
     background-color: var(--base-variant);
     border-radius: 50%;
     margin-bottom: 20px;
