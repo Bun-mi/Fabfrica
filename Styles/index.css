@@ -86,3 +86,58 @@ button{
         padding: 10px;
     }
 }
+.stock{
+    background-color: var(--body-base-color);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+.stocks:nth-child(1){
+    grid-row: 1;
+    grid-column: 1 / span 3;
+}
+.stocks:nth-child(2){
+    width: 300px;
+}
+.stocks:nth-child(3){
+    width: 1000px;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px;  
+    .left{
+        display: flex;
+        gap: 10px;
+    }
+    .right{
+        display: flex;
+        gap: 10px;
+    } 
+}
+.container{
+    background-color: var(--body-base-color);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.stock-body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    width: 300px;
+    height: 350px;
+    background-color: var(--base-color);
+}
+.contain{
+    height: 270px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
