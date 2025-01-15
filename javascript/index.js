@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const query = searchInput.value.trim();
         if (query) {
             alert(`Searching for: ${query}`);
-            // Add search logic here
         }
     });
 
@@ -19,4 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
             select.classList.toggle('open');
         });
     });
+
+    // Count for the products
+    const products = document.querySelectorAll(".stock-body-container");
+    const productCount = products.length;
+    document.getElementById("product-count").innerHTML = `${productCount} items`;
 });
+

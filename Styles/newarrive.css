@@ -1,0 +1,162 @@
+/* Stock Section */
+.stock {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-rows: auto;
+    margin: 20px;
+    gap: 10px;
+}
+.initstocks{
+    grid-column: 1/3;
+
+}
+.datstocks{
+    grid-column: 1/2;
+    justify-self: start;
+    width: 100%;
+}
+.fabrics{
+    grid-column: 2/3;
+    justify-self: stretch;
+    width: 100%;
+}
+.stocks-side {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.stocks-side .data {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stocks-side .data:hover {
+    color: red;
+}
+
+.container {
+    min-width: 500px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.new-arrival {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.new-arrival img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.new-arrival h4 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Top Section Filters */
+.hdng {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.hdng h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.hdng span {
+    font-size: 1em;
+    color: #666;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.top .left, .top .right {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.top label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.top select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav .main {
+        flex-direction: column;
+    }
+
+    nav .bar .search {
+        width: 100%;
+    }
+
+    nav .second .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stock {
+        flex-direction: column;
+    }
+
+    .stocks-side {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+ 
